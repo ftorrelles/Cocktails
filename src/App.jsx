@@ -33,7 +33,7 @@ function App() {
                 <button className="btn_cocktail">
                     <img
                         className="searchCocktail"
-                        src="./public/imgCocktail.png"
+                        src="/imgCocktail.png"
                         alt=""
                     />
                 </button>
@@ -45,10 +45,7 @@ function App() {
                     ))
                 ) : (
                     <div className="img_no">
-                        <img
-                            src="./public/noC.png"
-                            alt="Sin coincidencias"
-                        ></img>
+                        <img src="/noC.png" alt="Sin coincidencias"></img>
                     </div>
                 )}
             </section>
