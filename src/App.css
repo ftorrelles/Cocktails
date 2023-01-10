@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@400;500&family=Open+Sans:wght@300;500&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(133, 116, 70);
+    font-family: "Dosis", sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+.App {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.form_cocktail {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+    height: 30px;
+}
+.form_cocktail .input_cocktail {
+    padding-left: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: #85586f;
+    color: #fffcf5;
+}
+::placeholder {
+    color: #fffcf5;
+}
+.form_cocktail .btn_cocktail {
+    border: none;
+    background-color: rgb(248, 230, 230);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.searchCocktail {
+    width: 40px;
+    padding: 2px;
+}
+section {
+    padding: 1rem 3rem;
+    background-color: #cdc2ae;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.card {
+    display: flex;
+    gap: 0.5rem;
+}
+.card_img {
+    width: 40%;
+}
+.card_img .img_cocktail {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 100%;
+}
+
+.card_info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 60%;
+    background-color: rgb(255, 255, 255);
+    padding: 0 0.5rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.card_info > h2 {
+    text-align: center;
+}
+.card_info > p {
+    font-size: 0.9rem;
+}
+.App .img_no {
+    margin: 0 20px;
+    padding: 0 50px;
+}
