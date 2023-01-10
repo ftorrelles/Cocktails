@@ -84,6 +84,14 @@ section {
     font-size: 0.9rem;
 }
 .App .img_no {
-    margin: 0 20px;
-    padding: 0 50px;
+    display: flex;
+    justify-self: end;
+}
+@media (max-width: 900px) {
+    section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .App .img_no {
+        justify-self: center;
+    }
 }
