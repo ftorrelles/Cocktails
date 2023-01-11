@@ -14,16 +14,15 @@ body {
     font-family: "Dosis", sans-serif;
     font-family: "Open Sans", sans-serif;
 }
-.App {
-    margin: 1rem 0;
-    display: flex;
-    flex-direction: column;
+
+.img_logo {
+    width: 25%;
 }
 .form_cocktail {
     display: flex;
     justify-content: center;
     margin: 1rem 0;
-    height: 30px;
+    height: 20%;
 }
 .form_cocktail .input_cocktail {
     padding-left: 10px;
@@ -31,7 +30,7 @@ body {
     border-bottom-left-radius: 10px;
     border: none;
     outline: none;
-    background-color: #85586f;
+    background-color: #61876e;
     color: #fffcf5;
 }
 ::placeholder {
@@ -39,7 +38,7 @@ body {
 }
 .form_cocktail .btn_cocktail {
     border: none;
-    background-color: rgb(248, 230, 230);
+    background-color: #61876e46;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -48,50 +47,60 @@ body {
     padding: 2px;
 }
 section {
-    padding: 1rem 3rem;
-    background-color: #cdc2ae;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    padding: 4rem;
+    width: 100%;
 }
-.card {
+.card_cocktail {
     display: flex;
-    gap: 0.5rem;
 }
-.card_img {
-    width: 40%;
-}
-.card_img .img_cocktail {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+.card_body {
     height: 100%;
-}
-
-.card_info {
     display: flex;
     flex-direction: column;
-    gap: 0.6rem;
-    width: 60%;
-    background-color: rgb(255, 255, 255);
-    padding: 0 0.5rem;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-.card_info > h2 {
-    text-align: center;
-}
-.card_info > p {
-    font-size: 0.9rem;
+    align-items: center;
+    justify-content: space-around;
 }
 .App .img_no {
-    display: flex;
-    justify-self: end;
+    position: absolute;
+    right: 450px;
+    width: 40%;
 }
-@media (max-width: 900px) {
+@media (max-width: 992px) {
     section {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem;
     }
     .App .img_no {
-        justify-self: center;
+        right: 200px;
+        width: 50%;
+    }
+}
+@media (max-width: 768px) {
+    section {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+    .img_logo {
+        width: 40%;
+    }
+    .App .img_no {
+        right: 150px;
+        width: 50%;
+    }
+}
+@media (max-width: 480px) {
+    section {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem;
+    }
+    .img_logo {
+        width: 50%;
+    }
+    .App .img_no {
+        right: 100px;
+        width: 50%;
     }
 }

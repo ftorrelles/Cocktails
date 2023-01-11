@@ -2,10 +2,7 @@ import "./App.css";
 import useGetData from "./hooks/useGetData";
 import CardCocktails from "./componets/CardCocktails";
 import { useState } from "react";
-
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import NavBar from "./componets/NavBar";
 
 function App() {
     const [cocktailName, setCocktailName] = useState("");
@@ -14,13 +11,15 @@ function App() {
         (resp) => resp.data.drinks,
         cocktailName
     );
-    console.log(data);
+
     const searchCocktails = (e) => {
         e.preventDefault();
         setCocktailName(e.target[0].value);
     };
     return (
         <div className="App">
+            <NavBar />
+
             <form
                 className="form_cocktail"
                 onSubmit={(e) => searchCocktails(e)}
